@@ -1,0 +1,15 @@
+.todolist {
+    margin-top: 15px;
+
+    &-items {
+
+        height: 35px;
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        &-checkbox {
+            margin: 0 8px 8px 0;
+        }
+    }
+}
