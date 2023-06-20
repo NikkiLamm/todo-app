@@ -4,12 +4,43 @@
     &-items {
 
         height: 35px;
-        display: flex;
-        align-items: center;
         list-style: none;
 
-        &-checkbox {
-            margin: 0 8px 8px 0;
+        &-list {
+            display: flex;
+            align-items: center;
+
+            &-input {
+                margin: 0 16px 0 0;
+
+                width: 30px;
+                height: 30px;
+                appearance: none;
+                border: 2px solid var(--pink);
+                border-radius: 100px;
+                &:after {
+                    background: var(--pink);
+                }
+            }
+
+            &-label {
+                width: 344px;
+                height: 35px;
+                background: var(--pink);
+                border-radius: 8px;
+
+                &-text {
+                    height: 35px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    font-size: 12px;
+                    font-weight: 500;
+                    margin: 0 8px 0;
+                }
+            }
         }
     }
 }

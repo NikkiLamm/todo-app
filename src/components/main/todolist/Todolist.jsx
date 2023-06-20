@@ -2,15 +2,18 @@ import './todolist.scss';
 
 function Todolist() {
     return (
-        <div className="todolist">
-            <div className="todolist-items">
-                <ul className='todolist-items-checkbox'>
-                    <li>
-                        <input type="checkbox" checked={false} />
-                        <label htmlFor="">Dinner</label>
-                    </li>
-                </ul>
-            </div>
+        <div className='todolist'>
+            <ul className='todolist-items'>
+                <li className='todolist-items-list'>
+                    <input type='checkbox' checked={false} className='todolist-items-list-input' />
+                    <label htmlFor='' className='todolist-items-list-label'>
+                        <div className='todolist-items-list-label-text'>
+                            Dinner
+                            <p>20:00</p>
+                        </div>
+                    </label>
+                </li>
+            </ul>
         </div>
     );
 };

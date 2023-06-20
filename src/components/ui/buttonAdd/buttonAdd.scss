@@ -1,0 +1,13 @@
+.button {
+    width: 380px;
+    height: 40px;
+
+    background: var(--purple);
+    color: var(--white);
+
+    border-radius: 8px;
+
+    &:hover {
+        opacity: .6;
+    }
+}
